@@ -1,0 +1,84 @@
+#contactUsHeader {
+  margin-top: 90px;
+
+}
+
+#contactBody {
+  background-color: #c9c9c9;
+}
+
+iframe{
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+h2{
+  text-align: center;
+}
+
+.directMessageSection {
+  text-align: center;
+}
+
+.directMessageSection input, textarea {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.directMessageSection input, textarea{
+  width: 30%;
+}
+
+
+#charcoal {
+  height: 550px;
+  min-width: 100%;
+}
+
+#contactUsHeader {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3.5em;
+  color: #c9c9c9;
+
+  font-family: 'Roboto', sans-serif;
+
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+   background-blend-mode: multiply;
+
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+
+.directions {
+  text-align: center;
+}
+
+
+.maps {
+  padding-bottom: 190px;
+}
+
+.logos{
+  background-color: #d32323;
+  width: 10%;
+  height: 10%;
+}
+
+#paragraphInfo{
+  width: 70%;
+  background-color: #c9c9c9;
+
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+
+
+#facebookArea {
+  margin-bottom: -90px;
+}

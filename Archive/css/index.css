@@ -1,0 +1,66 @@
+img {
+    width: 70%;
+    margin: auto;
+}
+
+
+#daysOfWeekList{
+  list-style-type: none;
+  padding-left: none;
+}
+
+.headerText {
+  text-align: center;
+  font-size: 2.75em;
+}
+
+#bodyText  {
+  font-family: Bebas Neue;
+  font-size: 1.5em;
+  padding-bottom: 75px;
+  width: 70%;
+}
+
+
+
+html, #bodyText {
+  background-color: #c9c9c9;
+  border-radius: 10px;
+}
+
+#bodyText {
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+
+
+#extraSpace {
+  width: 120px;
+  display: inline-block;
+}
+
+#extraSpaceWed{
+  width: 100px;
+  display: inline-block;
+}
+
+#extraSpaceThurs {
+  width: 110px;
+  display: inline-block;
+}
+
+#extraSpaceFri {
+  width: 130px;
+  display: inline-block;
+}
+
+
+
+#x {
+  text-align: center;
+}
+
+#number {
+  list-style-type: none;
+}

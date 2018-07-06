@@ -1,13 +1,3 @@
-// document.ready(function(){
-//     // Activate Carousel
-//     $("#myCarousel").carousel({interval: 500});
-//
-//     // Enable Carousel Indicators
-//     $(".item1").click(function(){
-//         $("#myCarousel").carousel(0);
-//     });
-//   }
-
 var carousel = document.getElementsByClassName("myCarousel");
 
 document.body.ready(function(){

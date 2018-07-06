@@ -2,39 +2,394 @@
 <html>
 <head>
   <title>About</title>
-  <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111799542-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111799542-1');
+</script>
+
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/menu.css">
+  <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 
-<body>
+<body id="menuBody">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid" id="touchBothSides">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Mountaineer BBQ</a>
-        </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" id="touchBothSides">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
             <li><a href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</a></li>
-            <li><a href="catering.html">Catering</a></li>
-            <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i>
-   Contact</a></li>
+            <!-- <li><a href="catering.html"><i class="fa fa-truck" aria-hidden="true"></i> Catering</a></li> -->
+            <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
           </ul>
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-1" id="scrollBoxContainer">
+      <div class="scrollBar">
+          <label class="sideMenu">Sandwhiches
+            <input id="sandwichBox" onclick="checkFunction()" type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="sideMenu">Brisket
+            <input id="chickenBox" onclick="showBrisket()" type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="sideMenu">Sides
+            <input id="sideBox" onclick="showSides()" type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="sideMenu">Various
+            <input id="variousBox" onclick="showVarious()" type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+      </div>
+    </div>
+
+    <div class="col-xs-11" id="outputText">
+      <div class="row">
+        <div id="chickenOutput"></div>
+      </div>
+      <div class="row">
+        <div id="brisketOutput"></div>
+      </div>
+      <div class="">
+        <div id="beanOutput"></div>
+      </div>
+      <div class="">
+        <div id="variousOutput"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container" id="mainMenu">
+  <div class="row">
+      <h1 id="menuHeader">Country Roads BBQ</h1>
+  </div>
+  <!--Left Column of Menu -->
+  <div class="row">
+    <div class="col-xs-12" class="leftColumn">
+
+      <div class="row">
+        <div class="col-xs-6">
+
+          <!-- .............SANDWICHES............. -->
+          <div class="row">
+            <div class="col-xs-8">
+              <h2 class="categoryHeader">SANDWICHES</h2>
+            </div>
+            <div class="col-xs-4">
+              <h2>PRICES</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5 >PULLED PORK</h5>
+                <p>slow cooked pulled pork on white bun</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>5</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>GRILLED CHICKEN BREAST</h5>
+                <p>charcoaled grilled chicken breast on white roll</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>5</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>SPICY SAUSAGE</h5>
+                <p>sauteed onions, peppers, on a white roll</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>5</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>SWEET SAUSAGE</h5>
+              <p>sauteed onions, peppers, on a white roll</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>5</h5>
+            </div>
+          </div>
+
+          <!-- .............RIBS............. -->
+          <div class="row">
+            <div class="col-xs-8">
+              <h2 class="categoryHeader">RIBS</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h6 id="ribsDescription">ALL RIBS SEASONED WITH SPECIAL RUB THEN SLOW COOKED OVER CHARCOAL AND HICKORY WOOD CHIPS</h6>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>2 BONES</h5>
+            </div>
+            <div class="col-xs-3">
+              <h5>5</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>1/2 RACK</h5>
+            </div>
+            <div class="col-xs-3">
+              <h5>12</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>WHOLE RACK</h5>
+            </div>
+            <div class="col-xs-3">
+              <h5>20</h5>
+            </div>
+          </div>
+
+
+
+          <!-- .............DRINKS............. -->
+          <div class="row">
+            <div class="col-xs-8">
+              <h2 class="categoryHeader">DRINKS</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>SODA</h5>
+              <p>12 oz. can, Coke, Pepsi, Mountain Dew, Dr. Pepper, Root Beer, Diet Coke</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>1</h5>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-9">
+              <h5>WATER</h5>
+              <p>bottle</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>1</h5>
+            </div>
+          </div>
+        </div> <!--END OF LEFT COLUMN -->
+
+
+    <!--Right Column of Menu -->
+    <div class="col-xs-6" class="rightColumn">
+      <div class="row">
+
+        <!-- .............BRISKET............. -->
+        <div class="row">
+          <div class="col-xs-8">
+            <h2 class="categoryHeader">BRISKET</h2>
+          </div>
+          <div class="col-xs-4">
+            <h2>PRICES</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>TRADITIONAL</h5>
+            <p>served without a bun</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>8</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>SANDWICH</h5>
+            <p>served with a bun</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>8</h5>
+          </div>
+        </div>
+
+
+
+        <!-- .............SIDES............. -->
+        <div class="row">
+          <div class="col-xs-8">
+            <h2 class="categoryHeader">SIDES</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>POTATO SALAD</h5>
+            <p>3 ounces</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>3</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>BAKED BEANS</h5>
+            <p>3 ounces</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>3</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>CHILI</h5>
+            <p>mild, 3 ounces</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>3</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>CORNBREAD</h5>
+            <p>traditional or Jalapeno, Bacon, Cheese</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>2</h5>
+          </div>
+        </div>
+
+        <!-- .............DESSERT............. -->
+        <div class="row">
+          <div class="col-xs-8">
+            <h2 class="categoryHeader">DESSERT</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>COOKIES</h5>
+            <p>varies</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>1</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-9">
+            <h5>CAKES</h5>
+            <p>whole cake, varies</p>
+          </div>
+          <div class="col-xs-3">
+            <h5>6</h5>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+   </div>
+  </div>
+ </div>
+
+                <!-- DOWNLOAD MENU BUTTON -->
+ <div class="row">
+   <div class="col-xs-12" id="downloadButton">
+     <a href="../BBQmenu.pdf" download>
+       <button type="submit" name="Download">Download Menu</button></a>
+   </div>
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<footer id="copyrightSection">
+        <p>Copyright &copy 2018 Country Roads BBQ. All rights reserved.</p>
+      <!-- <div class="col-xs-4">
+        <p id="date"</p>
+      </div> -->
+</footer>
+
+
+
+<script type="text/javascript" src="../javascript/menu.js"> </script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

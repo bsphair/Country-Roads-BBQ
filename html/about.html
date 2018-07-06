@@ -2,14 +2,31 @@
 <html>
 <head>
   <title>About</title>
-  <link rel="stylesheet" type="text/css" href="../css/about.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111799542-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111799542-1');
+  </script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/about.css" rel="stylesheet" type="text/css">
+  <link href="../css/navBar.css" rel="stylesheet" type="text/css">
+
 </head>
 
-<body>
+<body id="aboutBody">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid" id="touchBothSides">
@@ -21,70 +38,92 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Mountaineer BBQ</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
             <li><a href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</a></li>
-            <li><a href="catering.html">Catering</a></li>
-            <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i>
-   Contact</a></li>
+            <!-- <li><a href="catering.html"><i class="fa fa-truck" aria-hidden="true"></i> Catering</a></li> -->
+            <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
           </ul>
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <!-- <img class="img-responsive" src="../images/bbq.jpg" id="mainImageOnIndex"> -->
 
-  <!-- <div class="bbqText">
 
-  </div> -->
-  <!-- <div class="container" id="a">
+
+
+<div class="container" id="descriptionText">
+  <!--About Us -->
     <div class="row">
-      <div class="col-lg-5 col-md-5 col-xs-5">
-        <h1>Mountaineer BBQ</h1>
-        <p>Spicy jalapeno bacon ipsum dolor amet sausage kielbasa spare ribs venison ribeye ground round bresaola jerky turducken picanha. Ground round pork tenderloin pastrami. Bresaola ball tip pork drumstick, strip steak meatball andouille pastrami salami alcatra short loin. Meatball meatloaf tail pork loin. Beef ribs jerky swine chuck picanha prosciutto tri-tip corned beef venison chicken shankle tenderloin hamburger burgdoggen brisket. Short ribs filet mignon pastrami bresaola turducken tongue turkey burgdoggen pork flank. Prosciutto meatloaf pastrami corned beef capicola fatback leberkas chuck, cow ball tip chicken.</p>
+      <div class="col-md-5 col-xs" id="firstParagraph">
+        <h1 class="headerText">About Us</h1>
+        <p class="paragraphText">Country Roads BBQ (formally known as Mountaineer BBQ) was founded in 2005 by Scott Phair in Wheeling, West Virginia. Our goal from the very beginning has been to provide customers with quality BBQ and exceptional customer service.</p>
+
+        <p class="paragraphText">
+        Crafting and perfecting his own BBQ sauce, Scott began Country Roads BBQ with his signature item, the pulled pork sandwich. Scott introduced his sandwich at various food and catered events across the region. Over the years, the menu has been expanded to include items such as ribs, baked beans, and brisket.
+      </p>
+      <p class="paragraphText">
+        All meats are carefully smoked and cooked the day prior to maximize the BBQ flavor.
+        </p>
       </div>
-      <div class="col-md-3 col-md-offset-3 col-xs-2">
-        <h2>Phone</h2>
-        <p>(304) 639 - 9852</p>
+      <div class="col-md-7 col-xs" >
+        <img src="../images/IMG_1802.jpg" id="profileIMG" class="img-responsive center-block">
       </div>
     </div>
 
-  </div> -->
-<!--Scott -->
-  <div class="container" id="descriptionText">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-xs-12">
-        <h1>Scott Phair, Founder</h1>
+
+
+
+    <!--Scott -->
+    <div class="row" id="secondParagraphBody">
+      <div class="col-md-5 col-xs" id="secondParagraphText">
+        <h1 class="headerText">Scott Phair, Owner</h1>
+        <p class="paragraphText">Scott has over 30 years of restaurant and customer service experience. He enjoys being able to create quality BBQ products and interacting with his customers.
+<br>
+<br>
+        He resides with his wife of over 30 years in Wheeling, West Virginia.
+        </p>
+      </div>
+      <div class="col-md-7 col-xs" >
+        <img src="../images/dad_kelly.jpg" id="profileIMG" class="img-responsive center-block">
       </div>
     </div>
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-            <p>Spicy jalapeno bacon ipsum dolor amet sausage kielbasa spare ribs venison ribeye ground round bresaola jerky turducken picanha. Ground round pork tenderloin pastrami. Bresaola ball tip pork drumstick, strip steak meatball andouille pastrami salami alcatra short loin. Meatball meatloaf tail pork loin. Beef ribs jerky swine chuck picanha prosciutto tri-tip corned beef venison chicken shankle tenderloin hamburger burgdoggen brisket. Short ribs filet mignon pastrami bresaola turducken tongue turkey burgdoggen pork flank. Prosciutto meatloaf pastrami corned beef capicola fatback leberkas chuck, cow ball tip chicken.</p>
-        </div>
+
+
+    <!--Kelly -->
+    <div class="row" id="secondParagraphBody">
+      <div class="col-md-5 col-xs" id="secondParagraphText">
+        <h1 class="headerText">Kelly Phair, Chef</h1>
+        <p class="paragraphText">Kelly has over 5 years of customer service and food industry experience. She enjoys baking and fostering local cats who are in need of a home.
+          <br>
+          <br>
+        She resides in Wheeling, West Virginia.
+        </p>
       </div>
-  </div>
-
-
-<!--Kelly -->
-
-  <div class="container" id="descriptionText">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-xs-12">
-        <h1>Kelly Phair, Chef</h1>
+      <div class="col-md-7 col-xs" id="kellyIMGArea">
+        <img src="../images/kellyProfile.jpg" id="profileIMGKelly" class="img-responsive center-block">
       </div>
     </div>
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-            <p>Spicy jalapeno bacon ipsum dolor amet sausage kielbasa spare ribs venison ribeye ground round bresaola jerky turducken picanha. Ground round pork tenderloin pastrami. Bresaola ball tip pork drumstick, strip steak meatball andouille pastrami salami alcatra short loin. Meatball meatloaf tail pork loin. Beef ribs jerky swine chuck picanha prosciutto tri-tip corned beef venison chicken shankle tenderloin hamburger burgdoggen brisket. Short ribs filet mignon pastrami bresaola turducken tongue turkey burgdoggen pork flank. Prosciutto meatloaf pastrami corned beef capicola fatback leberkas chuck, cow ball tip chicken.</p>
-        </div>
-      </div>
-  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<footer id="copyrightSection">
+        <p>Copyright &copy 2018 Country Roads BBQ. All rights reserved.</p>
+      <!-- <div class="col-xs-4">
+        <p id="date"</p>
+      </div> -->
+</footer>
+
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

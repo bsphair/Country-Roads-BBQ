@@ -1,18 +1,60 @@
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+#aboutBody {
+    background-color: #c9c9c9;
 }
 
-/*Centers the text in the navbar*/
-.navbar .navbar-collapse {
+
+.headerText {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Rubik', sans-serif;
+
+  /*font-family: Bebas Neue;*/
+  font-size: 2.8em;
   text-align: center;
 }
 
+.paragraphText {
+  /*font-family: 'Rubi', sans-serif;*/
+  letter-spacing: 0.05em;
+  font-family: 'Roboto', sans-serif;
+}
 
+p {
+  text-indent: 50px;
+  text-align: justify;
+}
 
 #descriptionText{
   margin-top: 100px;
-  border: 1px solid black;
   text-align: left;
+  width: 70%;
+  background-color: #c9c9c9;
+  border-radius: 10px;
+}
+
+#profileIMG {
+  margin-top: 40px;
+}
+
+#profileIMGKelly{
+  margin-top: 40px;
+
+  height: 50%;
+  width: 50%;
+}
+
+
+#kellyIMGArea{
+  padding-bottom: 25px;
+}
+
+#firstParagraph {
+  margin-top: 60px;
+}
+
+#secondParagraphBody {
+  margin-top: 120px;
+}
+
+#secondParagraphText {
+  margin-top: 100px;
 }
